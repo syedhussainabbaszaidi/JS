@@ -1,3 +1,5 @@
+// http://fineminent.com/
+
 jQuery('ul#ast-hf-menu-1>li:nth-child(1)>a').on('click', function () {
     jQuery('nav.docSlider-pager>button:nth-child(1)').click();
 });
