@@ -5,3 +5,9 @@
   $(`.main_area>.m2>.${brandName}`).css('display','block');
   });
   
+// select k option click pr class add
+
+$('#mySelect').on('change',function(){
+    var selectedvalue = $("option:selected" , this).addClass("intro");
+    console.log(selectedvalue);
+});
