@@ -1,0 +1,11 @@
+// yarishnala select option variant select
+
+jQuery('#Option-template--16760049041635__main-0').on('change', function(){
+    setTimeout(function(){
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const variant = urlParams.get('variant');
+    $('.product-form__submit').css('pointer-events','none');
+    window.location.href = 'https://www.yarishnaayala.com/products/waist-trainer?variant='+variant;
+    },500);
+});
