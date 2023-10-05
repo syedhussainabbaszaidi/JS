@@ -11,3 +11,15 @@ $('#mySelect').on('change',function(){
     var selectedvalue = $("option:selected" , this).addClass("intro");
     console.log(selectedvalue);
 });
+
+
+// select option add yarishnala
+
+$(document).ready(function() {
+$(".select__select").change(function(){
+    var a = $(this).find('option:selected');
+    $(this).find('option').removeAttr('selected');
+    a.attr('selected','selected');
+    console.log(a);
+});
+});
