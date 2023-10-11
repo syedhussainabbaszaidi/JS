@@ -1,3 +1,5 @@
+// karat wale pr kya tha 1 div jo k this banai phr dsri get ki
+
 $('.col3_box_1 > .col3_slide:not(:first-child)').hide();
 $('.col3_bottom > h6').on('click',function(){
 	let child = ($(this).index()) + 1;
