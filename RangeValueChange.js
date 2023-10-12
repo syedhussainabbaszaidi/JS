@@ -1,16 +1,17 @@
 // range value change horhi or image size chota barha horha marcelo ki web pr kya hai
 <script>
-    $('#myRange').on('input', function(){
-    let di_val = $(this).val();
-    if(di_val == 0){
-      di_val = "0.00";
-    }
-    else if(di_val == 5){
-      di_val = "5.00";
-    }
-    $('.get_value span:first-child').text(di_val);
-    $(this).parent().parent().find('img').css('width', (parseFloat(di_val)*43.33)+'%');
-    });
+      $('#myRange1').on('input', function(){
+      let di_val = $(this).val();
+      if(di_val == 0){
+        di_val = "0.00";
+      }
+      else if(di_val == 5){
+        di_val = "5.00";
+      }
+      // $(this).parent().parent().find('img').css('width', );
+      $('.get_value span:first-child').text(di_val);
+      $(this).parent().parent().find('img').css('width', (parseFloat(di_val)*4.33)+'%');
+      });
 </script>
 <div class="col2">
   <div class="standard">
