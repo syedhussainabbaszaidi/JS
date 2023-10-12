@@ -1,4 +1,4 @@
-// range value change horhi or image size chota barha horha
+// range value change horhi or image size chota barha horha marcelo ki web pr kya hai
 <script>
     $('#myRange').on('input', function(){
     let di_val = $(this).val();
