@@ -1,0 +1,10 @@
+
+jQuery('.et_pb_posts').append("<button class='load_m'>Show More</button>");
+jQuery('.et_pb_posts').each(function(){
+    jQuery(this).find("article").slice(0,6).css('display','flex');
+});
+jQuery(".load_m").click(function(){
+    jQuery(this).siblings('.et_pb_ajax_pagination_container').find("article:hidden").slice(0,4).css('display','flex');
+})
+
+
