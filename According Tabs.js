@@ -10,13 +10,15 @@ $('.col15_question').on('click',function(){
 <div class="about_question">{{ block.settings.question }}<span>+</span></div>
 <div class="about_answer">{{ block.settings.answer }}</div>
 </div>
-$('.about_question').on('click',function(){
-	$(this).find('span').addClass('active');
-	if($('span.active').text() == '+'){
-		$('span.active').text('-');
-	}
-	else if($('span.active').text() == '-'){
-		$('span.active').text('+');
-	}
-	$(this).parent().find('.about_answer').slideToggle(200);
-});
+function customTabs(){
+  $('.about_question').on('click',function(){
+    $(this).find('span').toggleClass('active');
+    if($('span.active').text() == '+'){
+        $('span.active').text('-');
+    }
+    else{
+        $('span').text('+');
+    }
+    $(this).parent().find('.about_answer').slideToggle(200);
+  });
+}
