@@ -1,4 +1,3 @@
-<span id="countdown">28 : 18 : 00 : 39</span>
 document.addEventListener('DOMContentLoaded', function() {
   // Function to start the countdown
   function startCountdown(duration, display) {
@@ -22,3 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }, 1000);
   }
+
+  // Initial time in seconds (28 days, 18 hours, 0 minutes, 51 seconds)
+  var initialTime = (28 * 24 * 60 * 60) + (18 * 60 * 60) + (0 * 60) + 51,
+      display = document.querySelector('#countdown');
+  
+  startCountdown(initialTime, display);
+});
